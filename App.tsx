@@ -1,20 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text } from "react-native";
+import {
+  Container,
+  ContainerPerfil,
+  Textcontainer,
+  Imageperfil,
+  ContainerLembrete
+} from "./src/css/Home";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Container>
+      
+      <ContainerPerfil>
+        <Imageperfil source={{ uri: "https://github.com/cauesilva1.png" }} />
+        <Textcontainer>Caue catone silva</Textcontainer>
+      </ContainerPerfil>
+
+      <ContainerLembrete>
+
+      </ContainerLembrete>
+
+    </Container>
+
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
